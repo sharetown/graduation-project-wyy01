@@ -1,8 +1,11 @@
 package com.wyy.mapper;
 
 import com.wyy.pojo.Node;
+import org.apache.ibatis.annotations.Mapper;
+
 import java.util.*;
 
+@Mapper
 public interface NodeMapper {
 	/**
 	 * 

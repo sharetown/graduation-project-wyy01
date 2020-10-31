@@ -1,8 +1,11 @@
 package com.wyy.mapper;
 
 import com.wyy.pojo.Folder;
+import org.apache.ibatis.annotations.Mapper;
+
 import java.util.*;
 
+@Mapper
 public interface FolderMapper
 {
     Folder queryById(final String fid);
