@@ -1,0 +1,16 @@
+server:
+  port: 80
+  servlet:
+    context-path: /
+
+spring:
+  datasource:
+    #驱动版本问题 高版本需要添加cj关键字  一般可以省略
+    #driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///shareftd?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+    username: root
+    password: root
+
+#spring mybatis
+mybatis:
+  mapper-locations:classpath: /mybatis/mappers/*.xml
